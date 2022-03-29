@@ -75,7 +75,7 @@ val_data = alldata[trainsplit:-1,:]
 
 # In[8]:
 
-
+#邻接矩阵示例
 import networkx as nx
 G = nx.Graph(name='G')
 for i in files:
@@ -87,7 +87,7 @@ G.add_edges_from(edges)
 plt.figure(figsize=(24,10))
 nx.draw(G, with_labels=True,node_size=5000, font_weight='normal',font_size=30,node_color='yellow')
 plt.show()
-
+#实际上邻接矩阵需要根据项目需要进行调整，通过列表循环等确定值
 
 
 # In[9]:
