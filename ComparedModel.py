@@ -28,7 +28,7 @@ import modelclass
 
 
 files = np.arange(201,220)
-filepath =['D://sjtu//博1//课程//人工智能//' + str(i) + '.csv' for i in files]
+filepath =['##目标文件夹' + str(i) + '.csv' for i in files]
 data = [np.array(pd.read_csv(i),dtype='float32') for i in filepath]
 
 
